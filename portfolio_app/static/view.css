@@ -1,0 +1,86 @@
+/* Center everything on the page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for all content */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* General heading styles */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Password form styling */
+.password-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.password-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.password-form button:hover {
+    background-color: #45a049;
+}
+
+/* Messages list styling */
+.messages-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.messages-list li {
+    text-align: left;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}

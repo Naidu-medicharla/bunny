@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'view.css' %}">
+    <title>View Messages</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <img src="{% static 'images/pass.png' %}" alt="Logo" class="logo">
+
+        <!-- Message Section -->
+        <h2>Only accessible by Bunny Naidu</h2>
+
+        <!-- Password Form -->
+        {% if not messages %}
+        <form method="POST" class="password-form">
+            {% csrf_token %}
+            <label for="password">Enter password to view messages:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% endif %}
+
+        <!-- Messages Section -->
+        {% if messages %}
+            <h1>View Submitted Messages</h1>
+            <ul class="messages-list">
+                {% for message in messages %}
+                    <li>
+                        <strong>{{ message.name }}</strong> ({{ message.email }}) said: <br>
+                        {{ message.subject }} - {{ message.message }} <br>
+                        <small>Submitted on: {{ message.timestamp }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <!-- Error Message Section -->
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

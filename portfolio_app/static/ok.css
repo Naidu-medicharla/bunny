@@ -1,0 +1,561 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+
+header nav ul li a {
+    color: #6d6c6c;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+/* Main Content Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse; /* Adjust image and text positioning */
+}
+
+.photo img {
+    max-width: 412px; /* Restrict image size */
+    border-radius: 100%; /* Circular image */
+    transition: transform 0.3s ease;
+    padding-left: 40px;
+}
+
+.photo img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.intro {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.greeting {
+    font-size: 20px;
+    color: white; /* Warm amber for "Hello, I am" */
+    margin-bottom: 10px; /* Space below for better alignment */
+    padding-right: 320px;
+}
+.intro p{
+    
+        font-size: 26px;
+        color: #333; /* Warm amber for "Hello, I am" */
+        margin-bottom: 10px; /* Space below for better alignment */
+        margin-top:30px ;
+        padding-right: 198px;
+    
+}
+
+.fade-in {
+    font-size: 50px; /* Make the second line larger */
+    color: #f0a500; /* Yellow color that suits the background */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Start position slightly below */
+    animation: fadeInMove 1.5s ease-out forwards; /* Animation for fade and move */
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move upwards to the first line */
+    }
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: inline-block;
+    margin: 10px;
+    padding-left: 20px;
+    
+}
+.social-icons {
+    display: inline-block;
+    margin: 10px;
+    padding-right: 284px;
+}
+
+/* Flexbox container for side by side positioning */
+.cta-social-container {
+    display: flex;
+    justify-content: center; /* Center them horizontally */
+    align-items: center;     /* Align items vertically */
+    gap: 20px;               /* Add space between the elements */
+}
+
+/* Hover effect for individual icons */
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    opacity: 0.8;          /* Optionally, reduce opacity on hover */
+}
+
+
+/* Button styles */
+.cta-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Social Icon styles */
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Additional Enhancements for Professional Look */
+.intro p {
+    font-size: 18px; /* Professional font size for body text */
+    margin-top: 15px;
+    color: #bbb; /* Softer contrast for secondary text */
+    line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Reset margin for consistency */
+}
+
+a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+/* About Me Section */
+/* About Me Section */
+.about {
+    padding: 60px 0;
+    background: #333; /* Match body background color */
+    text-align: center;
+    color: #fff; /* Maintain contrast */
+}
+
+.unique-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f0a500; /* Highlighted heading color */
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.unique-heading span {
+    position: relative;
+    z-index: 2;
+    background: #333; /* Same as body color */
+    padding: 0 15px;
+}
+
+.unique-heading::before,
+.unique-heading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background: #f0a500; /* Match heading color */
+}
+
+.unique-heading::before {
+    left: -120px;
+}
+
+.unique-heading::after {
+    right: -120px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; /* Box shape */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px; /* Subtle spacing around the image */
+    border-left: 4px solid #f7b731; /* Light amber border on the left */
+    border-bottom: 4px solid #f7b731; /* Light amber border at the bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for lift effect */
+}
+
+
+
+.about-details {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-details p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    line-height: 1.6;
+    color: #bbb; /* Softer text contrast */
+}
+
+/* Personal Info List Style */
+.personal-info {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+    font-size: 1.1rem; /* Consistent text size with the details paragraph */
+    color: #bbb; /* Softer text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Personal Info List Items */
+.personal-info li {
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Bolded Label for Info */
+.personal-info strong {
+    font-weight: bold; /* Bold the labels */
+    color: #bbb; /* Darker color for emphasis */
+}
+/* Skills Section Styling */
+.skills {
+    padding: 23px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 20px;
+   
+}
+
+.skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:    55px;
+}
+
+.skill-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 1px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-card h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #fff;
+}
+/* Centered Unique Heading */
+.skills .unique-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f0a500;
+    text-align: center; /* Center the heading */
+}
+
+/* Project Section */
+/* Project Section */
+#projects {
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Centered Unique Heading */
+.unique-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f0a500;
+    margin-bottom: 40px;
+    text-align: center; /* Center the text */
+    display: block; /* Make it block-level */
+    width: 100%; /* Ensure it takes full width for proper centering */
+    position: relative;
+}
+
+.unique-heading span {
+    position: relative;
+    z-index: 2;
+    background: #333;
+    padding: 0 15px;
+}
+
+.unique-heading::before,
+.unique-heading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 2px;
+    background: #f0a500;
+}
+
+.unique-heading::before {
+    left: 290px;
+}
+
+.unique-heading::after {
+    right:290px;
+}
+
+
+/* Projects Content */
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+    flex: 1;
+    max-width: 570px;
+}
+
+.project-description h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.project-description p {
+    font-size: 1.2rem;
+    color: #bbb;
+}
+
+.project-description .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-description .project-link:hover {
+    background-color: #218838;
+}
+
+/* Alternating Layout for Projects */
+.project-card:nth-child(odd) .project-image {
+    order: 1;  /* Image on left for odd projects */
+}
+
+.project-card:nth-child(odd) .project-description {
+    order: 2;  /* Description on right for odd projects */
+}
+
+.project-card:nth-child(even) .project-image {
+    order: 2;  /* Image on right for even projects */
+}
+
+.project-card:nth-child(even) .project-description {
+    order: 1;  /* Description on left for even projects */
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-form form div {
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.contact-photo {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.contact-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

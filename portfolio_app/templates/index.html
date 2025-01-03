@@ -1,0 +1,235 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Professional Home</title>
+    <link rel="stylesheet" href="{% static 'ok.css' %}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/view-messages/">View Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section id="home" class="section">
+        <div class="content">
+            <div class="photo">
+                <img src="{% static '1.png' %}" alt="Your Photo">
+            </div>
+            <div class="intro">
+                <h3 class="greeting">Hello, I am</h3>
+                <h2 class="fade-in">Bunny Medicharla</h2>
+                <p>Aspiring Software Developer</p>
+
+                <div class="cta-social-container">
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/bunny_.naidu" target="_blank">
+                            <img src="{% static 'images/insta.png' %}" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/in/naidumedicharla" target="_blank">
+                            <img src="{% static 'images/linkedin.png' %}" alt="LinkedIn">
+                        </a>
+                        <a href="https://twitter.com/BunnyNaiduuu" target="_blank">
+                            <img src="{% static 'images/tweet.png' %}" alt="Twitter">
+                        </a>
+                    </div>
+                </div>
+                
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="unique-heading">
+                <span>About Me</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-photo">
+                    <img src="{% static 'images/bunny.jpeg' %}" alt="About Me">
+                </div>
+                <div class="about-details">
+                    <p>
+                        I am an aspiring software developer with a passion for creating impactful solutions. My journey in
+                        technology has been fueled by curiosity and a drive to constantly improve.
+                    </p>
+                    <ul class="personal-info">
+                        <li><strong>Name:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bunny Medicharla</li>
+                        <li><strong>Email:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;naidumedicharla830@gmail.com</li>
+                        <li><strong>Phone:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8309100354</li>
+                        <li><strong>Address:</strong>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malikipuram, India</li>
+                        <li><strong>Nationality:</strong> &nbsp;&nbsp;&nbsp;&nbsp;Indian</li>
+                    </ul>
+                    <div class="cta-buttons">
+                        <a href="{% static 'files/resume.pdf' %}" download id="download-resume" class="cta-button">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="unique-heading">
+                <span>My Skills</span>
+            </h2>
+            <div class="skills-content">
+                <!-- Programming Skills -->
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skills-cards">
+                        <div class="skill-card">
+                            <img src="{% static 'images/c.png' %}" alt="C Logo" class="skill-card-icon">
+                            <h4>C</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/python.png' %}" alt="Python Logo" class="skill-card-icon">
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/java.png' %}" alt="Java Logo" class="skill-card-icon">
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Technologies -->
+                <div class="skill-category">
+                    <h3>Technologies</h3>
+                    <div class="skills-cards">
+                        <div class="skill-card">
+                            <img src="{% static 'images/html.png' %}" alt="HTML Logo" class="skill-card-icon">
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/css.png' %}" alt="CSS Logo" class="skill-card-icon">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/sql.png' %}" alt="SQL Logo" class="skill-card-icon">
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Software Skills -->
+                <div class="skill-category">
+                    <h3>Software</h3>
+                    <div class="skills-cards">
+                        <div class="skill-card">
+                            <img src="{% static 'images/excel.png' %}" alt="Excel Logo" class="skill-card-icon">
+                            <h4>Excel</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/word.png' %}" alt="MS Word Logo" class="skill-card-icon">
+                            <h4>MS Word</h4>
+                        </div>
+                        <div class="skill-card">
+                            <img src="{% static 'images/pp.png' %}" alt="PowerPoint Logo" class="skill-card-icon">
+                            <h4>PowerPoint</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="unique-heading">
+                <span>My Projects</span>
+            </h2>
+            <div class="projects-content">
+                <!-- Project 1: Image Left, Description Right -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/sms.png' %}" alt="Project 1">
+                    </div>
+                    <div class="project-description">
+                        <h3>Student Management System</h3>
+                        <p>I developed a Student Management System where teachers generate an OTP for attendance, and students use it to mark their attendance. This streamlined process saves time by enabling students to self-enter their attendance efficiently</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <!-- Project 2: Description Left, Image Right -->
+                <div class="project-card">
+                    <div class="project-description">
+                        <h3>Hand Gesture Controlled Home Appliances</h3>
+                        <p>The Hand Gesture Controlled Home Appliances project enables touchless control of devices like lights and fans using simple hand movements with gesture recognition technology.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="{% static 'images/hg.png' %}" alt="Project 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="unique-heading">
+                <span>Contact Me</span>
+            </h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form" method="post" action="{% url 'index' %}">
+                        {% csrf_token %}
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" onclick="clearForm(event)">Send Message</button>
+                    </form>
+                    <div id="form-message" style="margin-top: 10px; color: green; font-weight: bold;"></div>
+                </div>
+                <div class="contact-photo">
+                    <img src="{% static 'images/contact11.png' %}" alt="Contact Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Bunny's Portfolio</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+
+</html>
